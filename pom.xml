@@ -30,8 +30,8 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>heigit.ors</groupId>
     <artifactId>openrouteservice</artifactId>
-    <version>4.7.0</version>
-    <packaging>war</packaging>
+    <version>4.7.2</version>
+    <packaging>jar</packaging>
     <name>openrouteservice</name>
     <url>openrouteservice.org</url>
     <inceptionYear>2008</inceptionYear>
@@ -54,10 +54,10 @@
      </scm>
 
   <build>
-    <sourceDirectory>src/main/java</sourceDirectory>
+    <sourceDirectory>openrouteservice/src/main/java</sourceDirectory>
     <resources>
        <resource>
-         <directory>src/main/resources</directory>
+         <directory>openrouteservice/src/main/resources</directory>
          <includes>
            <include>resources/locales/*.resources</include>
            <include>resources/version.properties</include>
