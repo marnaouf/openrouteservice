@@ -54,10 +54,10 @@
      </scm>
 
   <build>
-    <sourceDirectory>openrouteservice/src/main/java</sourceDirectory>
+    <sourceDirectory>src/main/java</sourceDirectory>
     <resources>
        <resource>
-         <directory>openrouteservice/src/main/resources</directory>
+         <directory>src/main/resources</directory>
          <includes>
            <include>resources/locales/*.resources</include>
            <include>resources/version.properties</include>
