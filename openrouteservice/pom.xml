@@ -31,7 +31,7 @@
     <groupId>heigit.ors</groupId>
     <artifactId>openrouteservice</artifactId>
     <version>4.7.0</version>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <name>openrouteservice</name>
     <url>openrouteservice.org</url>
     <inceptionYear>2008</inceptionYear>
@@ -182,7 +182,7 @@
 			</snapshots>
 			<id>opengeo</id>
 			<name>OpenGeo Maven Repository</name>
-			<url>http://repo.opengeo.org</url>
+			<url>https://repo.boundlessgeo.com/main/</url>
 		</repository>
 		<repository>
       		<id>bintray-nitram509-jbrotli</id>
