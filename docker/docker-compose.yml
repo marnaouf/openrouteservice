@@ -14,6 +14,7 @@ services:
         image: "tomcat:8-jre8"
         volumes:
             - ./build/:/usr/local/tomcat/webapps/
+            - ./mybuild/:/target
             - ./data/:/usr/local/tomcat/data/
             - ./logs/ors/:/var/log/ors/
             - ./logs/tomcat/:/usr/local/tomcat/logs
