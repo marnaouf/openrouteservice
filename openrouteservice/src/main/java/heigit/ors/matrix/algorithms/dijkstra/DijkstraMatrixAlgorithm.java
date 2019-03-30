@@ -64,7 +64,7 @@ public class DijkstraMatrixAlgorithm extends AbstractMatrixAlgorithm {
 		{
 			DijkstraOneToManyAlgorithm algorithm = new DijkstraOneToManyAlgorithm(_graph, _weighting, TraversalMode.NODE_BASED);
 			algorithm.prepare(srcData.getNodeIds(),  dstData.getNodeIds());
-			algorithm.setMaxVisitedNodes(MatrixServiceSettings.getMaximumVisitedNodes());
+			algorithm.setMaxVisitedNodes(1000000);
 			
 			int sourceId = -1;
 
