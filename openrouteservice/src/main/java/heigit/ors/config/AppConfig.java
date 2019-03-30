@@ -47,7 +47,7 @@ public class AppConfig {
 	}
 	
 	public AppConfig()	{
-    	URL url = RoutingProfileManager.class.getClassLoader().getResource("app.config");
+    	URL url = RoutingProfileManager.class.getClassLoader().getResource("resources/app.config");
 		if(System.getenv("ORS_APP_CONFIG") != null)
 			url = RoutingProfileManager.class.getClassLoader().getResource("../" + System.getenv("ORS_APP_CONFIG"));
     	
