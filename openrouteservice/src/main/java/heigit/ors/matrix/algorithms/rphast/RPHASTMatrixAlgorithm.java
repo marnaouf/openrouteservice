@@ -36,6 +36,9 @@ public class RPHASTMatrixAlgorithm extends AbstractMatrixAlgorithm {
 	private PrepareContractionHierarchies _prepareCH;
 	private MultiTreeMetricsExtractor _pathMetricsExtractor;
 
+	// FYP ADDITION
+	private MultiTreeSPEntry[] originalDestTrees;
+
 	public void init(MatrixRequest req, GraphHopper gh, Graph graph, FlagEncoder encoder, Weighting weighting) {
 		super.init(req, gh, graph, encoder, weighting);
 
@@ -77,7 +80,7 @@ public class RPHASTMatrixAlgorithm extends AbstractMatrixAlgorithm {
 
 			MultiTreeSPEntry[] destTrees = algorithm.calcPaths(srcIds, destIds);
 
-			MultiTreeSPEntry[] originalDestTrees = new MultiTreeSPEntry[dstData.size()];
+			originalDestTrees = new MultiTreeSPEntry[dstData.size()];
 			
 			int j = 0;
 			for (int i = 0; i < dstData.size(); i++) {
@@ -116,5 +119,10 @@ public class RPHASTMatrixAlgorithm extends AbstractMatrixAlgorithm {
 			res[i] = nodeList.get(i);
 		
 		return res;
+	}
+
+	// FYP ADDITION
+	public MultiTreeSPEntry[] getDestTrees() {
+		return originalDestTrees;
 	}
 }
